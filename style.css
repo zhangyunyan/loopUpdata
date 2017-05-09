@@ -1,0 +1,120 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+
+
+
+
+/*loop*/
+.caseLoop {
+    width: 620px;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+}
+.caseLoop .img {
+    width: 2400px;
+    position: relative;
+}
+.caseLoop .img li {
+    /*width: 100%;*/
+    width: 620px;
+    height: 330px;
+    float: left;
+    position: relative;
+    display: block;
+    left: 0;
+    bottom: 10px;
+}
+
+.caseLoop .img   img{
+    position: absolute;
+    bottom: 5px;
+}
+.caseLoop .img   img.one{
+    left: 100px;
+}
+.caseLoop .img   img.two{
+    right: 100px;
+}
+.caseLoop .img ul a{
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    text-align: center;
+    display: block;
+    min-width: 1000px;
+    height: 420px;
+}
+.caseLoop .tab {
+    position: absolute;
+    float: right;
+    width: 350px;
+    left: 50%;
+    margin-left:-175px ;
+    top: 50px;
+    border-bottom: 1px solid #572707;
+}
+.caseLoop .tab li{
+    float: left;
+}
+.caseLoop .tab li.on a {
+    background:url("casebg0.png") no-repeat center;
+}
+.caseLoop .tab li a {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background:url("casebg.png") no-repeat center;
+    margin: 0 17.5px;
+}
+.caseLoop .tab li a img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 6px;
+}
+.caseLoop>a{
+    z-index: 1111;
+    position: absolute;
+    display: block;
+    width: 59px;
+    height: 64px;
+    background: url("./left.jpg") no-repeat;
+    bottom: 70px;
+    /*cursor: pointer;*/
+}
+.caseLoop a.btnL{
+    left: 10px;
+}
+.caseLoop a.btnR{
+    background: url("./right.jpg") no-repeat;
+    right: 10px;
+}
